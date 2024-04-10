@@ -9,8 +9,9 @@
 6. Generate ssh keys: `ssh-keygen -t ed25519 -C "zoocity14@gmail.com"`, with the names `github_personal` and `github_work`  (for more context https://blog.gitguardian.com/8-easy-steps-to-set-up-multiple-git-accounts/).
 
 ## Look
-1. Icons: Papirus Icons
-2. Cursor: Captaine Cursors
+1. Font: [MesloNF](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Meslo.zip)
+2. Icons: Papirus Icons
+3. Cursor: Captaine Cursors
 
 ## Programming
 1. Vim `sudo dnf install vim`
