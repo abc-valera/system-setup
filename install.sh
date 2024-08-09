@@ -50,7 +50,7 @@ sudo dnf install gnome-tweak-tool -y
 # Step 2.1 Install applications with dnf
 sudo dnf install vim -y
 sudo dnf install golang -y
-sudo dnf install nodejs
+sudo dnf install nodejs -y
 
 # Step 2.2 Build applications
 go install github.com/go-task/task/v3/cmd/task@latest
