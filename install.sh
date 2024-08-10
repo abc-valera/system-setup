@@ -52,6 +52,9 @@ sudo dnf install vim -y
 sudo dnf install golang -y
 sudo dnf install nodejs -y
 
+sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+sudo dnf install terraform -y
+
 # Step 2.2 Build applications
 go install github.com/go-task/task/v3/cmd/task@latest
 
