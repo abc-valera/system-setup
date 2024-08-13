@@ -20,8 +20,8 @@ trap catch ERR
 sudo dnf update -y
 sudo dnf install dnf-plugins-core -y
 
-# Step 1.2 Install GCC
-sudo dnf install gcc -y
+# Step 1.2 Install Dev Tools for C
+sudo dnf group install "C Development Tools and Libraries" -y
 
 # Step 1.3 Install git
 sudo dnf install git -y
