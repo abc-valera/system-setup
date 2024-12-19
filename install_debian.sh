@@ -44,6 +44,17 @@ cd /home/abc-valera/ || {
 
 # Step 2. Install applications
 
+# Step 2.1 Install golang
+
+printf "Downloading latest Go version...\n";
+
+LATEST_GO_VERSION="$(curl --silent https://go.dev/VERSION?m=text | head -n 1)";
+rm -rf /usr/local/go
+curl -OJ -L --progress-bar "https://go.dev/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz"
+tar -xf ${LATEST_GO_VERSION}.linux-amd64.tar.gz
+printf "You are ready to Go!";
+go version
+
 # Step 2.1 Install applications with apt
 apt-get install curl -y
 apt-get install wget -y
