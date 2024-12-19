@@ -43,9 +43,10 @@ rm -f /home/abc-valera/.ssh/id_ed_github_work
 ssh-keygen -t ed25519 -C "valeriy.tymofieiev@gmail.com" -N "" -f /home/abc-valera/.ssh/id_ed_github_work -N ""
 
 # Step 1.5 Setup the dotfiles
-if ! [ -d /home/abc-valera/dotfiles ]; then
-    git clone https://github.com/abc-valera/dotfiles.git /home/abc-valera/dotfiles
+if [ -d /home/abc-valera/dotfiles ]; then
+    rm -rf /home/abc-valera/dotfiles
 fi
+git clone https://github.com/abc-valera/dotfiles.git /home/abc-valera/dotfiles
 cd /home/abc-valera/dotfiles && ./install.sh
 cd /home/abc-valera/ || {
     echo "Failed to change directory to /home/abc-valera" >&2
