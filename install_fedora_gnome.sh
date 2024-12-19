@@ -70,7 +70,6 @@ rm -rf /usr/local/go
 curl -OJ -L --progress-bar "https://go.dev/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz"
 tar -C /usr/local -xzf ${LATEST_GO_VERSION}.linux-amd64.tar.gz
 printf "You are ready to Go!";
-go version
 
 # Step 2.1 Install applications with dnf
 dnf install vim -y
