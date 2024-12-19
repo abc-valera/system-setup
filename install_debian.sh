@@ -21,10 +21,7 @@ apt-get upgrade -y
 # Step 1.2 Install Dev Tools for C
 apt-get install build-essential -y
 
-# Step 1.3 Install git
-apt-get install git -y
-
-# Step 1.4 Add ssh keys for the new system (don't forget to add them to github after)
+# Step 1.3 Add ssh keys for the new system (don't forget to add them to github after)
 
 mkdir -p /home/abc-valera/.ssh
 
@@ -47,6 +44,8 @@ cd /home/abc-valera/ || {
 # Step 2. Install applications
 
 # Step 2.1 Install applications with apt
+apt-get install curl -y
+apt-get install wget -y
 apt-get install vim -y
 apt-get install golang -y
 apt-get install nodejs -y
