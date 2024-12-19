@@ -47,7 +47,6 @@ cd /home/abc-valera/ || {
 apt-get install curl -y
 apt-get install wget -y
 apt-get install vim -y
-apt-get install golang -y
 apt-get install nodejs -y
 
 # Step 2.2 Build applications
