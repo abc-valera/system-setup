@@ -63,7 +63,6 @@ dnf install "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-re
 
 # Step 2.1 Install applications with dnf
 dnf install vim -y
-dnf install golang -y
 dnf install nodejs -y
 
 # Step 2.2 Build applications
