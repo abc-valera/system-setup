@@ -28,6 +28,7 @@ dnf install dnf-plugins-core -y
 
 # Step 1.2 Install Dev Tools for C
 dnf group install c-development -y
+dnf install cmake
 
 # Step 1.3 Install git
 dnf install git -y
