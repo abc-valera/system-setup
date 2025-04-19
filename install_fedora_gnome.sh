@@ -74,7 +74,7 @@ printf "You are ready to Go!";
 
 # Install pyhton
 dnf install python3-devel
-sudo dnf install gcc-gfortran openblas-devel
+sudo dnf install gcc-gfortran openblas-devel patchelf python3-pythran gfortran
 
 # Step 2.1 Install applications with dnf
 dnf install vim -y
