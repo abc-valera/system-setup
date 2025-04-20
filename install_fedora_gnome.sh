@@ -28,7 +28,8 @@ dnf install dnf-plugins-core -y
 
 # Step 1.2 Install Dev Tools for C
 dnf group install c-development -y
-dnf install cmake
+dnf install @development-tools -y
+dnf install cmake -y
 
 # Step 1.3 Install git
 dnf install git -y
@@ -73,8 +74,8 @@ tar -C /usr/local -xzf ${LATEST_GO_VERSION}.linux-amd64.tar.gz
 printf "You are ready to Go!";
 
 # Install pyhton
-dnf install python3-devel
-sudo dnf install gcc-gfortran openblas-devel patchelf python3-pythran gfortran
+dnf install python3-devel -y
+dnf install gcc-gfortran openblas-devel patchelf python3-pythran gfortran -y
 
 # Step 2.1 Install applications with dnf
 dnf install vim -y
