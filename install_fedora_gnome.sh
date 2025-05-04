@@ -117,6 +117,7 @@ unzip -j 0xProto_2_300.zip "fonts/*" -d /usr/local/share/fonts/0xProto
 rm 0xProto_2_300.zip
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/0xProto.tar.xz
+mkdir -p /usr/local/share/fonts/0xProto
 tar -xf 0xProto.tar.xz -C /usr/local/share/fonts/0xProto
 rm 0xProto.tar.xz
 
