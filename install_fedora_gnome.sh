@@ -116,6 +116,10 @@ wget https://github.com/0xType/0xProto/releases/download/2.300/0xProto_2_300.zip
 unzip -j 0xProto_2_300.zip "fonts/*" -d /usr/local/share/fonts/0xProto
 rm 0xProto_2_300.zip
 
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/0xProto.tar.xz
+tar -xf 0xProto.tar.xz -C /usr/local/share/fonts/0xProto
+rm 0xProto.tar.xz
+
 # Step 3.2 Install the icon theme
 dnf install papirus-icon-theme -y
 
