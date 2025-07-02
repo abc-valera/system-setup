@@ -39,10 +39,10 @@ dnf install git -y
 mkdir -p /home/abc-valera/.ssh
 
 rm -f /home/abc-valera/.ssh/id_ed_github_personal
-ssh-keygen -t ed25519 -C "zoocity14@gmail.com" -N "" -f /home/abc-valera/.ssh/id_ed_github_personal -N ""
+ssh-keygen -t ed25519 -C "valeriy.tymofieiev@gmail.com" -N "" -f /home/abc-valera/.ssh/id_ed_github_personal -N ""
 
 rm -f /home/abc-valera/.ssh/id_ed_github_work
-ssh-keygen -t ed25519 -C "valeriy.tymofieiev@gmail.com" -N "" -f /home/abc-valera/.ssh/id_ed_github_work -N ""
+ssh-keygen -t ed25519 -C "abc.valera.04@gmail.com" -N "" -f /home/abc-valera/.ssh/id_ed_github_work -N ""
 
 # Step 1.5 Setup the dotfiles
 if [ -d /home/abc-valera/dotfiles ]; then
@@ -112,14 +112,14 @@ echo "Docker installed!🐋"
 # Step 3. Configure the look
 
 # Step 3.1 Install and configure the fonts
-wget https://github.com/0xType/0xProto/releases/download/2.300/0xProto_2_300.zip
-unzip -j 0xProto_2_300.zip "fonts/*" -d /usr/local/share/fonts/0xProto
-rm 0xProto_2_300.zip
+wget https://github.com/IBM/plex/releases/download/%40ibm%2Fplex-mono%401.1.0/ibm-plex-mono.zip
+unzip -j ibm-plex-mono.zip "ibm-plex-mono/fonts/complete/otf/*" -d /usr/local/share/fonts/IBMPlexMono
+rm ibm-plex-mono.zip
 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/0xProto.tar.xz
-mkdir -p /usr/local/share/fonts/0xProto
-tar -xf 0xProto.tar.xz -C /usr/local/share/fonts/0xProto
-rm 0xProto.tar.xz
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IBMPlexMono.tar.xz
+mkdir -p /usr/local/share/fonts/NerdFontIBMPlexMono
+tar -xf IBMPlexMono.tar.xz -C /usr/local/share/fonts/NerdFontIBMPlexMono
+rm IBMPlexMono.tar.xz
 
 # Step 3.2 Install the icon theme
 dnf install papirus-icon-theme -y
