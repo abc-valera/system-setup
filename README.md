@@ -7,6 +7,7 @@
 5. Remap Caps to Ctrl in `Tweaks -> Keyboard -> Additional Layout Options -> Ctrl Position -> Caps Lock as Ctrl`
 6. Set cursors and icons in `Tweaks`
 7. Set cursor size in `Settings -> Accessability -> Seeing -> Cursor Size -> Large`
-8. Install Zoom
-9. Install UpWork
-10. Delete the repository `rm -rf system-setup`
+8. In Gnome Tweak disable the middle click paste in `Gnome Tweaks -> Mouse & Touchpad -> Middle Click Paste (in the Mouse section)`
+9. Install Zoom
+10. Install UpWork
+11. Delete the repository `rm -rf system-setup`
